@@ -18,4 +18,5 @@ typedef struct product
 product *addProduct(product *, product);
 char *getChar(char *);
 float getFloat(char *);
+void print_products(product *);
 #endif

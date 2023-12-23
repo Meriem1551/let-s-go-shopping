@@ -19,7 +19,8 @@ int main(void)
         product.Qte = getFloat("How many did you buy? ");
         product.TVA = getFloat("What's its tax? ");
         head = addProduct(head, product);
-        printf("Do you want to buy another prduct? ");
+        printf("Do you want to buy another product? ");
         scanf("%s", &choice);
     } while (strcmp(choice, "no") != 0);
+    print_products(head);
 }
