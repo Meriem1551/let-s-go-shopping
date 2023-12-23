@@ -24,4 +24,5 @@ int main(void)
     } while (strcmp(choice, "no") != 0);
     print_products(head);
     create_total_amount(head);
+    return (0);
 }
