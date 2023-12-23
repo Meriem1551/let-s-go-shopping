@@ -23,4 +23,5 @@ int main(void)
         scanf("%s", &choice);
     } while (strcmp(choice, "no") != 0);
     print_products(head);
+    create_total_amount(head);
 }

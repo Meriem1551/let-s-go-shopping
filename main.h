@@ -19,4 +19,8 @@ product *addProduct(product *, product);
 char *getChar(char *);
 float getFloat(char *);
 void print_products(product *);
+void create_total_amount(product *);
+int calc_numProducts(product *);
+float calc_total_price(product *);
+float calc_total_taxes(product *);
 #endif

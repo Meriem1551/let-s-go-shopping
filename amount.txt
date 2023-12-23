@@ -1,0 +1,14 @@
+****** AMOUNT OF WHAT YOU BUY ******
+oranges...................50.000000
+Total cost: 260.500000DA
+Number of products: 1
+Total taxes: 10.500000
+Total cost without taxes: 250.000000
+
+****** AMOUNT OF WHAT YOU BUY ******
+water...................120.000000
+Total cost: 720.000000DA
+Number of products: 1
+Total taxes: 0.000000
+Total cost without taxes: 720.000000
+
