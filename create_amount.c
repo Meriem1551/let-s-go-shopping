@@ -22,7 +22,7 @@ void create_total_amount(product *h)
     total_cost = calc_total_price(h);
     total_taxes = calc_total_taxes(h);
     total_cost_without_taxes = total_cost - total_taxes;
-    FILE *amount = fopen("amount.txt", "a");
+    FILE *amount = fopen("amount.txt", "w");
     if (amount == NULL)
     {
         printf("Error opening file");
@@ -32,14 +32,14 @@ void create_total_amount(product *h)
     tmp = h;
     while (tmp != NULL)
     {
-        fprintf(amount, "%s...................%f\n", tmp->designation, tmp->PUA_HT);
+        fprintf(amount, "%s...................%.2fDA\n", tmp->designation, tmp->PUA_HT);
         tmp = tmp->next;
         ;
     }
-    fprintf(amount, "Total cost: %fDA\n", total_cost);
+    fprintf(amount, "Total cost: %.2fDA\n", total_cost);
     fprintf(amount, "Number of products: %d\n", num_products);
-    fprintf(amount, "Total taxes: %f\n", total_taxes);
-    fprintf(amount, "Total cost without taxes: %f\n", total_cost_without_taxes);
+    fprintf(amount, "Total taxes: %.2fDA\n", total_taxes);
+    fprintf(amount, "Total cost without taxes: %.2fDA\n", total_cost_without_taxes);
     fprintf(amount, "\n");
     fclose(amount);
 }
